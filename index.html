@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+    
+    <iframe src="assets/audio/Music_Asteroid_chase.mp3" allow="autoplay" style="display:none" id="iframeAudio"></iframe>
+    <audio autoplay loop  id="playAudio"><source src="assets/audio/Music_Asteroid_chase.mp3"></audio> 
+
+    <nav class="navbar navbar-light bg-primary justify-content-center">    
+        <a class="navbar-brand" href="#">
+            <img src="https://botw-pd.s3.amazonaws.com/styles/logo-thumbnail/s3/0002/7830/brand.gif?itok=_6t7Vl8X"  width="75" height="75" class="d-inline-block align-top" alt=""></a>
+            <h1 class="text-white">Word Guess Game </h1>         
+    </nav>
+  
+    <div class="bg">
+        <header>
+            <nav class="nav flex-column">
+                <h2 id="players-name" class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></h2>
+                <h3 id="guesses-left" class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></h3>
+                <h3 id="wins" class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></h3>
+                <h3 id="losses" class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></h3>
+            </nav>
+        </header>
+
+        <div class="mask rgba-gradient d-flex justify-content-center align-items-center">
+            <!-- Content -->
+            <div class="container">
+              <!--Grid row-->
+                <div class="row mt-5">
+                <!--Grid column-->
+                    <div class="col-md-6 mb-5 mt-md-0 mt-5 text-secondary text-center text-md-left">
+                        <h4 id="statement" class="h6-responsive font-weight-bold wow fadeInLeft" data-wow-delay="0.3s"></h4>
+                        <hr class="hr-light wow fadeInLeft" data-wow-delay="0.3s">
+                        <h6 id="instructions" class="mb-3 wow fadeInLeft" data-wow-delay="0.3s"></h6>
+                        <button id="myBtn" type="button" class="btn btn-warning">Play</button>
+                        <audio id="myAudio"><source src="assets/audio/Background.mp3" type="audio/mp3"></audio>
+
+                        <h1 id="display"></h1>
+                        <h3 id="letters"></h3>
+                        <h4 id="status" class="font-italic"></h4>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="assets/javascript/game.js"></script>
+
+</body>
+</html>
