@@ -5,6 +5,9 @@ Word Guess Game using Javascript
 
 In this project, l have created a game that will run in the browser, and feature dynamically updated HTML and CSS powered by JavaScript code.
 
+### Deployed Site Link
+https://doybrian.github.io/Word-Guess-Game/
+
 ## How It Works
 
 1. Star Wars theme was chosen for this game! Words, intro, background music and sound effects are all related to the franchise. This is due to the popularity of the franchise though I can't say that I am a fanatic.
